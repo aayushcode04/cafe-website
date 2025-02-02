@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu-card</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+      body {
+        background: linear-gradient(90deg, #9c7559, #d6b58f);
+        font-family: "Playfair+Display", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+     
+      .upper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease;
+      }
+
+      .logo:hover {
+        transform: scale(1.1);
+      }
+
+      .join {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        background: rgba(125, 42, 42, 0.8);
+        transition: background 0.3s ease, transform 0.3s ease;
+      }
+
+      .join:hover {
+        background: rgba(255, 0, 0, 0.8);
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
+      }
+
+      
+      .Headline {
+        display: grid;
+        grid-template-columns: 1fr 2fr 0.5fr;
+     
+        margin: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        background: rgba(79, 54, 5, 0.9);
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .menu {
+        display: grid;
+        grid-template-columns: 1fr 2fr 0.5fr;
+        margin: 20px 20px;
+        font-size: 22px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .menu:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .item,
+      .description,
+      .price {
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .item {
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.8);
+      }
+
+      .description {
+        font-style: italic;
+        color: #555;
+      }
+
+      .price {
+        font-weight: bold;
+        color: #9c7559;
+      }
+
+      
+      .discount {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        margin: 40px 20px;
+        background: linear-gradient(90deg, #e3ad62, #e2a45b, #c08555);
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="upper">
+      <img class="logo" src="cafe-image/cafe-logo.webp" alt="Cafe Logo" />
+      <a class="join" href="Cafe-project.html">Back to Home-page</a>
+    </div>
+
+    <div class="Headline">
+      <div class="Item">Our Specialties</div>
+      <div class="Description">Description</div>
+      <div class="Price">Price</div>
+    </div>
+
+    <div class="menu">
+      <div class="item">Cappuccino</div>
+      <div class="description">
+        Espresso coffee topped with steamed milk foam and a sprinkle of cocoa
+        powder.
+      </div>
+      <div class="price">₹150</div>
+    </div>
+
+    <div class="menu">
+      <div class="item">Espresso</div>
+      <div class="description">Rich and intense single shot of coffee</div>
+      <div class="price">₹80</div>
+    </div>
+
+    <div class="menu">
+      <div class="item">Latte</div>
+      <div class="description">Smooth espresso with steamed milk</div>
+      <div class="price">₹130</div>
+    </div>
+
+    <div class="menu">
+      <div class="item">Iced Coffee</div>
+      <div class="description">Cold coffee served over ice</div>
+      <div class="price">₹140</div>
+    </div>
+
+    <div class="menu">
+      <div class="item">Chocolate Chip Cookie</div>
+      <div class="description">Classic cookie with gooey chocolate chips</div>
+      <div class="price">₹80</div>
+    </div>
+
+    <div class="menu">
+      <div class="item">Classic Veg Sandwich</div>
+      <div class="description">Melted cheese between toasted bread</div>
+      <div class="price">₹120</div>
+    </div>
+
+    <div class="menu">
+      <div class="item">Brownie Sundae</div>
+      <div class="description">
+        Warm brownie with ice cream and chocolate syrup
+      </div>
+      <div class="price">₹180</div>
+    </div>
+
+    <div class="menu">
+      <div class="item">Chocolate Shake</div>
+      <div class="description">Rich chocolate shake with chocolate drizzle</div>
+      <div class="price">₹150</div>
+    </div>
+
+    <div class="menu">
+      <div class="item">Strawberry Smoothie</div>
+      <div class="description">Refreshing blend of strawberries and yogurt</div>
+      <div class="price">₹120</div>
+    </div>
+
+    <div class="menu">
+      <div class="item">Ice Cream Scoop</div>
+      <div class="description">Choice of vanilla, chocolate, or strawberry</div>
+      <div class="price">₹70 per scoop</div>
+    </div>
+
+    <div class="menu">
+      <div class="item">Paneer Wrap</div>
+      <div class="description">Grilled paneer with veggies in a wrap</div>
+      <div class="price">₹130</div>
+    </div>
+
+    <h2 class="discount">
+      On ordering 3 or more items, you will get a 30% discount !!!
+    </h2>
+  </body>
+</html>
